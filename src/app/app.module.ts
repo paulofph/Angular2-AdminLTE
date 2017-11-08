@@ -19,6 +19,7 @@ import { AdminControlSidebarComponent } from './admin/admin-control-sidebar/admi
 import { AdminDashboard1Component } from './admin/admin-dashboard1/admin-dashboard1.component';
 import { HomePageComponent } from './starter/home-page/home-page.component';
 
+
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -29,7 +30,8 @@ import { HomePageComponent } from './starter/home-page/home-page.component';
 		StarterFooterComponent,
 		StarterControlSidebarComponent,
 		HomePageComponent,
-		AdminContentComponent
+		AdminContentComponent,
+
 	],
 	imports: [
 		BrowserModule,

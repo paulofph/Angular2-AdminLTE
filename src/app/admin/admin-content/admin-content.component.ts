@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 // models
 import { Journey } from './../../models/journey.model'
+import { Trip } from './../../models/trip.model'
 
 @Component({
 	selector: 'app-admin-content',
@@ -13,8 +14,14 @@ export class AdminContentComponent implements OnInit {
 	areaChart: morris.GridChart;
 	donutChart: morris.DonutChart;
 	private journeys: Journey[];
+	private departureTrip1: Trip;
+	private arrivalTrip1: Trip;
+	private departureTrip2: Trip;
+	private arrivalTrip2: Trip;
 
-	constructor() { }
+	constructor() {
+
+	}
 
 	ngOnInit() {
 		this.areaChart = Morris.Area({
@@ -41,14 +48,63 @@ export class AdminContentComponent implements OnInit {
 			hideHover: 'auto'
 		});
 
+		this.departureTrip1 = {
+			"id": 1,
+			"destinationAirport": "Aeroporto Internacional Logan",
+			"departureAirport": "Aeroporto Humberto Delgado",
+			"arrivalDate": "25/05/2018",
+			"arrivalTime": "10h55m",
+			"departureDate": "25/05/2018",
+			"departureTime": "13h30m",
+			"flightCode": "TP250"
+		}
+
+		this.arrivalTrip1 = {
+			"id": 2,
+			"destinationAirport": "Aeroporto Humberto Delgado",
+			"departureAirport": "Aeroporto Internacional Logan",
+			"arrivalDate": "30/05/2018",
+			"arrivalTime": "18h40m",
+			"departureDate": "31/05/2018",
+			"departureTime": "6h00m",
+			"flightCode": "TP562"
+		}
+
+		this.departureTrip2 = {
+			"id": 3,
+			"destinationAirport": "Aeroporto Internacional Tom Jobim",
+			"departureAirport": "Aeroporto Humberto Delgado",
+			"arrivalDate": "10/07/2018",
+			"arrivalTime": "10h55m",
+			"departureDate": "10/07/2018",
+			"departureTime": "13h30m",
+			"flightCode": "TP250"
+		}
+
+		this.arrivalTrip2 = {
+			"id": 4,
+			"destinationAirport": "Aeroporto Humberto Delgado",
+			"departureAirport": "Aeroporto Internacional Tom Jobim",
+			"arrivalDate": "24/07/2018",
+			"arrivalTime": "18h40m",
+			"departureDate": "25/07/2018",
+			"departureTime": "6h00m",
+			"flightCode": "TP562"
+		}
+
 		this.journeys = [{
 			"id": 1,
 			"destinationCity": "Boston",
 			"destinationCoutry": "USA",
-			"destinationAirport": "Aeroporto Internacional de Logan",
-			"departureAirport": "Aeroporto Humberto Delgado",
-			"departureDate": "25/03/2018",
-			"departureTime": "10h50m"
+			"departureTrip": this.departureTrip1,
+			"arrivalTrip": this.arrivalTrip1,
+		},
+		{
+			"id": 1,
+			"destinationCity": "Rio de Janeiro",
+			"destinationCoutry": "BR",
+			"departureTrip": this.departureTrip2,
+			"arrivalTrip": this.arrivalTrip2,
 		}];
 	}
 }
