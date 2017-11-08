@@ -11,20 +11,19 @@ import { CommonModule } from '@angular/common';
 import { AdminDashboard2Component } from './admin-dashboard2/admin-dashboard2.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    AdminRoutingModule
-  ],
-  declarations: [
-    AdminComponent,
-    AdminHeaderComponent,
-    AdminLeftSideComponent,
-    AdminContentComponent,
-    AdminFooterComponent,
-    AdminControlSidebarComponent,
-    AdminDashboard1Component,
-    AdminDashboard2Component
-  ],
-  exports: [AdminComponent]
+	imports: [
+		CommonModule,
+		AdminRoutingModule
+	],
+	declarations: [
+		AdminComponent,
+		AdminHeaderComponent,
+		AdminLeftSideComponent,
+		AdminFooterComponent,
+		AdminControlSidebarComponent,
+		AdminDashboard1Component,
+		AdminDashboard2Component
+	],
+	exports: [AdminComponent]
 })
 export class AdminModule { }

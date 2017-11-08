@@ -17,23 +17,26 @@ import { AdminContentComponent } from './admin/admin-content/admin-content.compo
 import { AdminFooterComponent } from './admin/admin-footer/admin-footer.component';
 import { AdminControlSidebarComponent } from './admin/admin-control-sidebar/admin-control-sidebar.component';
 import { AdminDashboard1Component } from './admin/admin-dashboard1/admin-dashboard1.component';
+import { HomePageComponent } from './starter/home-page/home-page.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    StarterComponent,
-    StarterHeaderComponent,
-    StarterLeftSideComponent,
-    StarterContentComponent,
-    StarterFooterComponent,
-    StarterControlSidebarComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    AdminModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		StarterComponent,
+		StarterHeaderComponent,
+		StarterLeftSideComponent,
+		StarterContentComponent,
+		StarterFooterComponent,
+		StarterControlSidebarComponent,
+		HomePageComponent,
+		AdminContentComponent
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		AdminModule
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
