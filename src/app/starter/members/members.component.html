@@ -1,0 +1,67 @@
+<div class="content-wrapper" style="padding-top: 15px;">
+	<div class="box box-solid bg-light-blue-gradient">
+		<div class="box-header">
+			<div class="col-md-2"><input type="text" class="form-control" style="margin:10px" placeholder="Nome"></div>
+			<div class="col-md-8" style="margin: auto;">
+				<div class="box-tools" style="float: left; margin:10px">
+					<div class="dropdown">
+						<button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+						 aria-expanded="true">
+										  Tipo de Colaborador
+										  <span class="caret"></span>
+										</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a href="#">Administrador</a></li>
+							<li><a href="#">Operacional</a></li>
+							<li><a href="#">Trabalhador</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="box-tools" style="margin:10px">
+					<div class="dropdown">
+						<button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+						 aria-expanded="true">
+							Projectos
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a href="#">Administrador</a></li>
+							<li><a href="#">Operacional</a></li>
+							<li><a href="#">Trabalhador</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="box box-solid bg-light-blue-gradient" style="margin-left: 10px; margin-right: 10px;">
+		<div class="info-box bg-green">
+			<span class="info-box-icon">
+				<img src="assets/img/user2-160x160.jpg" style="width:45px" class="img-circle" alt="User Image">
+			</span>
+
+			<div class="info-box-content">
+				<div class="col-md-4">
+					<span class="info-box-text" style="white-space: inherit"><i class="fa fa-map-marker"></i> {{journey.destinationCity}}, {{journey.destinationCoutry}}</span>
+					<span class="info-box-text"></span>
+					<span class="info-box-text"></span>
+				</div>
+				<div class="col-md-4">
+					<span class="info-box-text"><i class="fa fa-arrow-right"></i></span>
+					<span class="info-box-text"><i class="fa fa-calendar"></i> {{journey.departureTrip.departureDate}}</span>
+					<span class="info-box-text"><i class="fa fa-clock-o"></i>{{journey.departureTrip.departureTime}}</span>
+					<span class="info-box-text"><i class="fa fa-plane"></i>{{journey.departureTrip.flightCode}}</span>
+				</div>
+				<div class="col-md-4">
+					<span class="info-box-text"><i class="fa fa-arrow-left"></i></span>
+					<span class="info-box-text"><i class="fa fa-calendar"></i> {{journey.arrivalTrip.departureDate}}</span>
+					<span class="info-box-text"><i class="fa fa-clock-o"></i>{{journey.arrivalTrip.departureTime}}</span>
+					<span class="info-box-text"><i class="fa fa-plane"></i>{{journey.arrivalTrip.flightCode}}</span>
+				</div>
+			</div>
+			<!-- /.info-box-content -->
+		</div>
+	</div>
+</div>

@@ -18,6 +18,8 @@ import { AdminFooterComponent } from './admin/admin-footer/admin-footer.componen
 import { AdminControlSidebarComponent } from './admin/admin-control-sidebar/admin-control-sidebar.component';
 import { AdminDashboard1Component } from './admin/admin-dashboard1/admin-dashboard1.component';
 import { HomePageComponent } from './starter/home-page/home-page.component';
+import { CalendarComponent } from './starter/calendar/calendar.component';
+import { MembersComponent } from './starter/members/members.component';
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import { HomePageComponent } from './starter/home-page/home-page.component';
 		StarterControlSidebarComponent,
 		HomePageComponent,
 		AdminContentComponent,
+		CalendarComponent,
+		MembersComponent,
 
 	],
 	imports: [
